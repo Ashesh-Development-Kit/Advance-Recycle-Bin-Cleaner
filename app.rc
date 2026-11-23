@@ -1,0 +1,36 @@
+1 ICON "assets/icon.ico"
+1 24 "app.manifest"
+
+#ifdef ARBC_CLI
+#define ARBC_ORIGINAL_FILENAME "advance_recycle_bin_cleaner_cli.exe"
+#else
+#define ARBC_ORIGINAL_FILENAME "ARBC.exe"
+#endif
+
+// English (Australia), Unicode.
+LANGUAGE 9, 3
+1 VERSIONINFO
+FILEVERSION 0,5,2,8
+PRODUCTVERSION 0,3,1,8
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0
+FILEOS 0x40004L
+FILETYPE 0x1L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0C0904B0"
+        BEGIN
+            VALUE "FileDescription", "Advance Recycle Bin Cleaner"
+            VALUE "FileVersion", "0.5.2.8-eab"
+            VALUE "ProductName", "Advance Recycle Bin Cleaner"
+            VALUE "ProductVersion", "0.3.1.8-m"
+            VALUE "LegalCopyright", "CopyLeft - 2026 ADK"
+            VALUE "OriginalFilename", ARBC_ORIGINAL_FILENAME
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0c09, 1200
+    END
+END

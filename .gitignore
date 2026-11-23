@@ -1,0 +1,22 @@
+# Zig builds and staged installer payloads or tool downloads
+/.zig-cache/
+/zig-cache/
+/zig-out/
+
+# Executables and symbols copied out of the build directory
+ARBC.exe
+advance_recycle_bin_cleaner.exe
+advance_recycle_bin_cleaner_cli.exe
+ARBC-Setup-*-x64.exe
+*.pdb
+*.dmp
+
+# Portable settings, atomic saves, and runtime logs
+advance_recycle_bin_cleaner.json
+advance_recycle_bin_cleaner.json.*.tmp
+ARBC.log
+ARBC.log.1
+ARBC-error.log
+ARBC-error.log.1
+Setup.log
+Setup-error.log
